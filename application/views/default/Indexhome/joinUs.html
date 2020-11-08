@@ -1,0 +1,563 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <!--编码-->
+    <meta charset="utf-8">
+    <!--如果是IE浏览器，就自动调用最新的渲染方式-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--移动端视口的设置-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <link href="__HOME__img/other/title.ico" rel="shortcut icon">
+    <title>云果达</title>
+
+    <link rel="stylesheet" href="__HOME__css/base.css">
+    <!--<link rel="stylesheet" href="css/swiper-3.4.2.min.css">-->
+    <link href="__HOME__css/city-picker.css" rel="stylesheet">
+    <link href="__HOME__css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="__HOME__css/index.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries 因为在IE8及以下是不支持H5 C3 和 响应式，所以需要引入两个文件，让其支持-->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// 响应式的功能不能使用file://的查看，而需要使用http://  https://-->
+    <!--[if lt IE 9]>
+    <script src="__HOME__lib/html5shiv/html5shiv.min.js"></script>
+    <script src="__HOME__lib/respond/respond.js"></script>
+
+    <![endif]-->
+
+</head>
+<body>
+<!--导航、banner-->
+<div class="to_top">
+    <a href="#"><img src="__HOME__img/other/to_top.jpg" alt=""/></a>
+</div>
+<div class="info rela">
+    <div class="nav-nav ab">
+        <div class="w cl rela">
+            <div class="fl logo">
+                <a href="{:U('index')}">
+                    <img src="__HOME__img/header/LOGO.jpg" alt="">
+                </a>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li>
+                        <a href="{:U('index')}">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a>
+                    </li>
+                    <li>
+                        <a href="{:U('ygdinfo')}">公司简介</a>
+                    </li>
+                    <li>
+                        <a href="{:U('intro_product')}">产品介绍</a>
+                    </li>
+                    <li class="active">
+                        <a href="{:U('joinus')}">我要加盟</a>
+                    </li>
+                    <li>
+                        <a href="{:U('news')}">新闻资讯</a>
+                    </li>
+                    <li>
+                        <a href="{:U('recruit')}">招贤纳士</a>
+                    </li>
+                    <li>
+                        <a href="{:U('contact_us')}">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="app ab">
+                <a href="mailto:customer@vsea.com.cn"><img src="__HOME__img/header/button-e-mail-hover.jpg" class="app-l"
+                                                           alt=""></a>
+                <a href="{:U('intro_product')}#aa"><img src="__HOME__img/header/button-app-download-hover.jpg" class="app-r"
+                                                     alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="nav-banner text-c rela">
+        <img src="__HOME__img/banner/joinUs-bg.jpg" alt=""/>
+        <div class="joinUsBgText ab text-c">
+            <img src="__HOME__img/banner/joinUs-bgText.jpg" alt="">
+        </div>
+    </div>
+</div>
+<!--我要加盟-->
+<div class="joinUs w">
+    <div class="joinUsTab">
+        <div class="joinUsTab-t">
+            <div class="apply active rela">
+                <img src="__HOME__img/joinUs/banner1.jpg" alt="">
+                <div class="ab text-c">
+                    <h5>使用云果达平台-开启自己的电商之旅</h5>
+                    <h6 class="line">——</h6>
+                    <h6>招商基本要求</h6>
+                    <p>能为云果达提供优质货源的生产基地、水果经纪人、品牌商。</p>
+                    <p>有生产经营资质、商品检验资质。</p>
+                    <p>能提供正规发票。</p>
+                </div>
+            </div>
+            <div class="purchase rela">
+                <img src="__HOME__img/joinUs/banner2.jpg" alt="">
+                <div class="ab text-c">
+                    <h5>使用云果达平台-开启自己的电商之旅</h5>
+                    <h6 class="line">——</h6>
+                    <h6>招商基本要求</h6>
+                    <p>云果达为您提供优质果品，全程冷链，保质保鲜。</p>
+                    <p>缓解资金压力，促进资金周转。</p>
+                </div>
+            </div>
+        </div>
+        <div class="joinUsTab-m">
+            <span class="active">申请供应商</span>
+            <span>我要采购</span>
+        </div>
+        <div class="joinUsTab-b">
+            <div class="apply active">
+                <div class="joinUsTab-b-t">
+                    <p>尊敬的用户您好~</p>
+                    <p>请您如实填写以下信息，我们会为您全程保密，请您放心填写~</p>
+                    <p>填写后请耐心等待审核（两个工作日），审核通过后我们将第一时间通知您~</p>
+                </div>
+                <div class="joinUsTab-b-b cl">
+                    <form action="{:U('joinus')}" class="cl ygd_form" method="post" enctype="multipart/form-data">
+                        <div class="flotBox cl">
+                          <div class="item">
+                            <div class="item-t">
+                                <span>生成水果类别</span><span class="c-red">*</span>
+                            </div>
+                            <div class="item-b item-tab">
+                                <div class="item-tab-t slide">
+                                    <span class="fl">
+                                        ---
+                                    </span>
+                                    <span class="fr">
+                                        <i></i>
+                                    </span>
+                                </div>
+                                <div class="item-tab-b">
+                                    <div class="item-tab-b-c">
+                                        <input type="hidden"   errormsg=" " class="hid-inp" name="type">
+                                        <div class="item-tab-b-c-t">
+                                            <span>柚</span>
+                                            <span>苹果</span>
+                                            <span>梨</span>
+                                            <span>香蕉</span>
+                                            <span>提子/葡萄</span>
+                                            <span>桃</span>
+                                            <span>西瓜</span>
+                                            <span>哈密瓜</span>
+                                            <span>芒果</span>
+                                            <span>橘</span>
+                                            <span>枣</span>
+                                            <span>李</span>
+                                            <span>香瓜</span>
+                                            <span>火龙果</span>
+                                            <span>浆果</span>
+                                            <span>菠萝</span>
+                                            <span>木瓜</span>
+                                            <span>猕猴桃</span>
+                                            <span>柠檬</span>
+                                            <span>杨桃</span>
+                                            <span>莲雾</span>
+                                            <span>甘蔗</span>
+                                            <span>橘子</span>
+                                            <a class="last">重新选择</a>
+                                        </div>
+                                        <div class="line"></div>
+                                        <div class="item-tab-b-c-m">
+                                            <span>其他水果</span>
+                                        </div>
+                                        <div class="item-tab-b-c-b">
+                                            <input type="text" name="type_other">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                          <div class="item half ">
+                            <div class="item-t">
+                                <span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span><span class="c-red">*</span>
+                            </div>
+                            <div class="item-b">
+                                <input type="text"  name="name" datatype="zh2-4" errormsg=" ">
+                                <span class="Validform_checktip"></span>
+                            </div>
+                        </div>
+                          <div class="item half ">
+                            <div class="item-t">
+                                <span>手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机</span><span class="c-red">*</span>
+                            </div>
+                            <div class="item-b">
+                                <input type="text" name="tel" datatype="m" errormsg=" ">
+                                <span class="Validform_checktip"></span>
+                            </div>
+                        </div>
+                          <div class="item half ">
+                            <div class="item-t">
+                                <span>公司名称</span><span class="c-red">*</span>
+                            </div>
+                            <div class="item-b">
+                                <input type="text" name="company" datatype="*" errormsg=" ">
+                                <span class="Validform_checktip"></span>
+                            </div>
+                        </div>
+                          <div class="item half ">
+                            <div class="item-t">
+                                <span>企业地址</span><span class="c-red">*</span>
+                            </div>
+                            <div class="item-b">
+                                <input type="text" name="companyaddress" datatype="*" errormsg=" ">
+                                <span class="Validform_checktip"></span>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="upIdCard">
+                            <label for="idCardIn1">
+                                <img src="__HOME__img/joinUs/shenfenzhenzhengmian.jpg" alt="" name="idCardIn1">
+                            </label>
+                            <label for="idCardOn2">
+                                <img src="__HOME__img/joinUs/shenfenzhengbeimian.jpg" name="idCardOn2" alt="">
+                            </label>
+                            <label for="yyzz3">
+                                <img src="__HOME__img/joinUs/yyzz.jpg" alt="" name="yyzz3">
+                            </label>
+                            <input type="file" name="img_z" id="idCardIn1">
+                            <input type="file" name="img_f" id="idCardOn2">
+                            <input type="file" name='img_shop' id="yyzz3">
+                        </div>
+                        <div class="button">
+                            <button>申请供应商</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="purchase ">
+                <div class="joinUsTab-b-t">
+                    <p>尊敬的用户您好~</p>
+                    <p>请您如实填写以下信息，我们会为您全程保密，请您放心填写~</p>
+                    <p>填写后请耐心等待审核（两个工作日），审核通过后我们将第一时间通知您~</p>
+                </div>
+                <div class="joinUsTab-b-b cl">
+                    <form action="{:U('template')}" class="cl ygd_form" method="post" enctype="multipart/form-data">
+                    <div class="cl ygd_form">
+                        <div class="flotBox cl">
+                            <div class="item half ">
+                                <div class="item-t">
+                                    <span>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;名</span><span class="c-red">*</span>
+                                </div>
+                                <div class="item-b">
+                                    <input type="text" name="name" datatype="zh2-4" errormsg=" ">
+                                    <span class="Validform_checktip"></span>
+                                </div>
+                            </div>
+                            <div class="item half ">
+                                <div class="item-t">
+                                    <span>手&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;机</span><span class="c-red">*</span>
+                                </div>
+                                <div class="item-b">
+                                    <input type="text" name="tel" >
+                                    <span class="Validform_checktip"></span>
+                                </div>
+                            </div>
+                            <div class="item half ">
+                                <div class="item-t">
+                                    <span>身份证号</span><span class="c-red">*</span>
+                                </div>
+                                <div class="item-b">
+                                    <input type="text" name="idcard" datatype="card" errormsg=" ">
+                                    <span class="Validform_checktip"></span>
+                                </div>
+                            </div>
+                            <div class="item half ">
+                                <div class="item-t">
+                                    <span>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区</span><span class="c-red">*</span>
+                                </div>
+                                <div class="controls">
+                                    <select name="p" class="threePro">
+                                        <option value="">--请选择--</option>
+                                        <volist name="pro" id="vo">
+                                            <option value="{$vo.provinceid}">{$vo.province}</option>
+                                        </volist>
+                                    </select>
+                                    <select name="c" class="threeCity" >
+                                    </select>
+                                    <select name="ar" class="threeArea" >
+                                    </select>
+                                </div>
+                               <!-- <div class="item-b">
+                                    &lt;!&ndash;<input type="text" placeholder="选择省/市/区">&ndash;&gt;
+                                    <div class="docs-methods">
+                                        <form class="form-inline">
+                                            <div id="distpicker">
+                                                <div class="form-group">
+                                                    <div style="position: relative;">
+                                                        <input id="city-picker3" name="area" class="form-control" readonly
+                                                               type="text" value="选择省/市/区" data-toggle="city-picker">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>-->
+                            </div>
+                            <div class="item half ">
+                                <div class="item-t">
+                                    <span>店铺名称</span><span class="c-red">*</span>
+                                </div>
+                                <div class="item-b">
+                                    <input type="text" name="shopname" datatype="s6-18" errormsg=" ">
+                                    <span class="Validform_checktip"></span>
+                                </div>
+                            </div>
+                            <div class="item half ">
+                                <div class="item-t">
+                                    <span>详细地址</span><span class="c-red">*</span>
+                                </div>
+                                <div class="item-b">
+                                    <input type="text" name="address" datatype="s6-18" errormsg=" ">
+                                    <span class="Validform_checktip"></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upIdCard">
+                            <label for="idCardIn">
+                                <img src="__HOME__img/joinUs/shenfenzhenzhengmian.jpg" alt="" name="idCardIn">
+                            </label>
+                            <label for="idCardOn">
+                                <img src="__HOME__img/joinUs/shenfenzhengbeimian.jpg" name="idCardOn" alt="">
+                            </label>
+                            <label for="yyzz">
+                                <img src="__HOME__img/joinUs/yyzz.jpg" alt="" name="yyzz">
+                            </label>
+                            <input type="file" name="img_z" id="idCardIn">
+                            <input type="file" name='img_f' id="idCardOn">
+                            <input type="file" name='img_shop' id="yyzz">
+                        </div>
+                        <div class="button">
+                            <button>申请采购</button>
+                        </div>
+                       </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<!--底部-->
+<div class="foot">
+    <div class="foot_top rela">
+        <div class="foot_logo text-c">
+            <img src="__HOME__img/footer/LOGO.jpg" alt=""/>
+        </div>
+        <div class="footer_nav">
+            <ul class="cl">
+                <li>
+                    <a href="{:U('index')}">首&nbsp;&nbsp;页</a>
+                </li>
+                <li>
+                    <a href="{:U('ygdinfo')}">公司简介</a>
+                </li>
+                <li>
+                    <a href="{:U('intro_product')}">产品介绍</a>
+                </li>
+                <li class="current">
+                    <a href="{:U('joinus')}">我要加盟</a>
+                </li>
+                <li>
+                    <a href="{:U('news')}">新闻资讯</a>
+                </li>
+                <li>
+                    <a href="{:U('recruit')}">招贤纳士</a>
+                </li>
+                <li>
+                    <a href="{:U('contact_us')}">联系我们</a>
+                </li>
+            </ul>
+        </div>
+        <!--<div class="concat w">-->
+        <ul class="concat w">
+            <li class="email">
+                <p><a href="mailto:customer@vsea.com.cn">customer@vsea.com.cn</a></p>
+                <p class="phone">400-1515-771</p>
+                <p class="company">深圳市云果达供应链有限公司</p>
+                <p>水果行业最值得信赖的供应链服务商</p>
+            </li>
+            <li>
+                <a href="###" class="code_ios">
+                    <div><img src="__HOME__img/footer/IOS-erweima.jpg" alt=""/></div>
+                    <p>云果达app(IOS版) </p>
+                </a>
+            </li>
+            <li>
+                <a href="###" class="code_az">
+                    <div><img src="__HOME__img/footer/anzhuo-erweima.jpg" alt=""/></div>
+                    <p>云果达app(安卓版) </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="foot_bottom">
+        ©2015-2017&nbsp;云果达&nbsp;版权所有&nbsp;粤ICP备17114601号
+    </div>
+</div>
+<script src="__HOME__js/jquery-1.10.1.min.js"></script>
+<script src="__HOME__js/city-picker.data.js"></script>
+<script src="__HOME__js/city-picker.js"></script>
+<script src="__HOME__js/main.js"></script>
+<script src="__HOME__js/Validform_v5.3.2_min.js"></script>
+<script>
+    //    导航
+    $(".nav ul li").on('click', function () {
+        $(this).addClass('active').siblings('li').removeClass('active');
+    });
+
+    $(".footer_nav ul li").on('click', function () {
+        $(this).addClass('current').siblings('li').removeClass('current');
+    });
+
+    //    职位tab
+    $(".recruit-content-tab ul li").on('click', function () {
+        $(this).addClass('active').siblings('li').removeClass('active');
+        if ($(this).hasClass('all')) {
+            $('.recruit-content-content-b .item').addClass('active');
+        } else {
+            $('.recruit-content-content-b .item').removeClass('active');
+            var className = $(this).attr('class');
+            className = className.substr(0, className.length - 6);
+            $('.recruit-content-content-b .item.' + className + '').addClass('active');
+        }
+    });
+
+    $(".slideDown").on('click', function () {
+        var height = $(this).parents('.item-t').siblings('.item-b').find('.item-b-content').height() + 80;
+        console.log(height);
+        $(this).toggleClass('active');
+        if ($(this).hasClass('active')) {
+            $(this).parents('.item-t').siblings('.item-b').css({
+                'height': height,
+                'border-bottom': '1px dotted #888'
+            })
+        } else {
+            $(this).parents('.item-t').siblings('.item-b').css({
+                'height': 0,
+                'border-bottom': 'none'
+            })
+        }
+
+    });
+
+    //    我要加盟tab
+    $(".joinUsTab-m span").on("click", function () {
+        $(this).addClass('active').siblings('span').removeClass('active');
+        var index = $(this).index();
+        $('.joinUsTab-t>div').eq(index).addClass('active').siblings('div').removeClass('active');
+        $('.joinUsTab-b>div').eq(index).addClass('active').siblings('div').removeClass('active');
+    })
+
+    $(".item-tab-t").on('click', function () {
+        var height = $('.item-tab-b-c').height();
+        $(".item-tab-b").toggleClass('height')
+        if ($(".item-tab-b").hasClass('height')) {
+            $(".item-tab-b").css('height', height + 10)
+        } else {
+            $(".item-tab-b").css('height', 0)
+        }
+        $('.item-tab-t .fr').toggleClass('active')
+    })
+
+    //    其他水果
+    $(".item-tab-b-c-m span").on('click', function () {
+        $(".item-tab-b-c-m").hide();
+        $(".item-tab-b-c-b").show().find('input').focus();
+    })
+
+    //    选择水果
+    $(".item-tab-b-c-t span").on('click', function () {
+        $(this).addClass('active')
+    })
+    //    重选水果
+    $(".item-tab-b-c-t .last").on('click', function () {
+        $(".item-tab-b-c-t span").removeClass('active')
+    });
+    //    选中水果传值
+
+    $(".item-tab-b-c-t span").click(function(){
+        var str='';
+        $(".item-tab-b-c-t span.active").each(function(i,e){
+            str+=$(e).html()+",";
+        });
+        $(".hid-inp").val(str);
+    });
+
+//    正则校验
+    var demo = $(".ygd_form").Validform({
+        tiptype: 3,
+        label: ".label",
+        showAllError: false,
+//            ajaxPost:true
+
+        datatype: {
+            "zh2-4": /^[\u4E00-\u9FA5\uf900-\ufa2d]{2,4}$/,
+            "card": /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/,
+//            "m": /^13[0-9]{9}$|14[0-9]{9}|15[0-9]{9}$|18[0-9]{9}$/,
+            "m": /^(0|86|17951)?(13[0-9]|15[012356789]|17[5678]|18[0-9]|14[57])[0-9]{8}$/,
+            "s6-18": /^[\u4E00-\u9FA5\uf900-\ufa2d\w\.\s]{6,18}$/
+        }
+    });
+    //    身份证上传
+    $(".upIdCard input").on("change",function (e) {
+        var src=getObjectURL(this.files[0]);
+        var thisId=$(this).attr('id');
+        $(".upIdCard").find("img[name="+thisId+"]").attr("src",src)
+    })
+
+
+//    获取上传图片url
+    function getObjectURL(file) {
+        var url = null ;
+        if (window.createObjectURL!=undefined) { // basic
+            url = window.createObjectURL(file) ;
+        } else if (window.URL!=undefined) { // mozilla(firefox)
+            url = window.URL.createObjectURL(file) ;
+        } else if (window.webkitURL!=undefined) { // webkit or chrome
+            url = window.webkitURL.createObjectURL(file) ;
+        }
+        return url ;
+    }
+</script>
+<script type="text/javascript">
+    $(".threePro").change(function() {
+        // 获取省级分类的编号
+        var ProId = $(this).val();
+        //  ID发送
+        $.post("{:U('addr')}", {
+            // 将id传到后台
+            proId: ProId
+        }, function(res) {
+            console.log(res);
+            var strCity='<option value="" >--请选择--</option>';
+            $.each(res,function(i,v) {
+                strCity += "<option value=" + v.cityid + ">" + v.city + "</option>";
+            });
+            $(".threeCity").html(strCity);
+            $('.threeCity').change(function(){
+                //获取市级分类的编号
+                var cityid = $(this).val();
+                $.post("{:U('area')}",
+                        {cityid:cityid},function(res){
+                            var strarea='<option value="" >--请选择--</option>';
+                            $.each(res,function(i,v){
+                                strarea += "<option value=" + v.areaid + ">" + v.area + "</option>";
+                            });
+                            $(".threeArea").html(strarea);
+                        }
+                )
+            })
+        })
+    })
+</script>
+</body>
+</html>
